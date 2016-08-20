@@ -1,0 +1,19 @@
+	
+
+    // Phone Number
+    string SMSUser = "5321230000";
+    string SMSPass = "5321230000";
+    string SMSOriginator = "5321230000";
+     
+    // Create Sms Object
+    SmsSender sms = new SmsSender(SMSUser, SMSPass, SMSOriginator);
+     
+    if (sms.SendSMS(new string[] { "5321230000" }, "DENEME MESAJI"))
+    {
+            // Mesaj Gönderildi
+    }
+    else
+    {
+            // Mesaj Gönderilemedi
+    }
+
